@@ -1,0 +1,65 @@
+*{
+    background: white;
+}
+
+body{
+    margin: 0;
+}
+
+img{
+    width: 100%;
+    padding: 15px;
+}
+
+section{
+    display: grid;
+}
+
+footer{
+    background-color: black;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+}
+
+text{
+    font-size: 20px;
+    text-align: start;
+}
+
+#container{
+    text-align: center;
+    margin: 0 auto;
+}
+
+#logo{
+    width: 6%;
+    text-align: start;
+    padding: 1px;
+}
+
+@media screen and (max-width: 480px){
+    section{
+        display: block;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width:800px){
+    section{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 802px){
+    section{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (min-width: 1024px)
+{
+    #container{
+        max-width: 1024px;
+    }
+}
